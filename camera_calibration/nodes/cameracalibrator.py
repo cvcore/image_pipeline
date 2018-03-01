@@ -37,12 +37,14 @@ import functools
 import message_filters
 import os
 import rospy
-from camera_calibration.camera_calibrator import OpenCVCalibrationNode
-from camera_calibration.calibrator import ChessboardInfo, Patterns
+from camera_calibrator import OpenCVCalibrationNode
+from my_calibrator import ChessboardInfo, Patterns
 from message_filters import ApproximateTimeSynchronizer
 
 
 def main():
+    print('Momenta camera calibrator')
+
     from optparse import OptionParser, OptionGroup
     parser = OptionParser("%prog --size SIZE1 --square SQUARE1 [ --size SIZE2 --square SQUARE2 ]",
                           description=None)
