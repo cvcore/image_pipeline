@@ -508,8 +508,6 @@ class Calibrator(object):
         # + "  data: [" + ", ".join(["%8f" % i for i in r.reshape(1,9)[0]]) + "]\n"
         # + "projection_matrix: !!opencv-matrix\n"
         # + "  rows: 3\n"
-        + "  cols: 4\n"
-        + "  data: [" + ", ".join(["%8f" % i for i in p.reshape(1,12)[0]]) + "]\n"
         + "")
         return calmessage
 
